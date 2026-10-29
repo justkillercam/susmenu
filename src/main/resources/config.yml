@@ -1,0 +1,31 @@
+# Which anti-cheat to read flags from: grim, vulcan, matrix or spartan
+anti-cheat: grim
+
+# Optional. Leave blank to auto-detect the anti-cheat's flag event.
+# Only fill this in if the console says it couldn't find the event.
+# Example: event-class: "me.frep.vulcan.api.event.VulcanFlagEvent"
+event-class: ""
+
+# A player only shows up in the menu with at least this many flags
+min-flags: 1
+
+# Flags older than this many minutes are forgotten (0 = never forget)
+flag-expire-minutes: 60
+
+# How many different reasons to list on each player head
+max-reasons: 5
+
+# Menu title
+menu-title: "<red>Sus Menu"
+
+# Leave blank for the default prefix: "<gray>[<red>SUS<gray>]"
+prefix: ""
+
+# Colors: <red> <green> <gold> <orange> <#RRGGBB> <bold> <reset> or &c style codes
+messages:
+  no-permission: "<red>You don't have permission."
+  players-only: "<red>Only players can use this."
+  nobody: "<green>Nobody is sus right now."
+  spectating: "<gray>Now spectating <white>{target}<gray>."
+  target-offline: "<red>That player is no longer online."
+  reloaded: "<green>Config reloaded."

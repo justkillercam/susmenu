@@ -1,0 +1,21 @@
+name: SusMenu
+version: ${project.version}
+main: fun.tcsmp.susmenu.SusMenu
+api-version: '1.21'
+folia-supported: true
+softdepend: [GrimAC, Vulcan, Matrix, Spartan]
+authors: [justkillercam]
+description: Menu of players flagged by your anti-cheat, click one to spectate them
+
+commands:
+  sus:
+    description: Open the sus menu (/sus reload reloads the config)
+    usage: /sus [reload]
+
+permissions:
+  susmenu.use:
+    description: Open the sus menu
+    default: op
+  susmenu.reload:
+    description: Reload the SusMenu config
+    default: op
